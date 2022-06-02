@@ -118,8 +118,6 @@ public class GameController {
         return randomGenerator;
     }
    
-    -------------------
-    Hi welcome 
 
 }
  
