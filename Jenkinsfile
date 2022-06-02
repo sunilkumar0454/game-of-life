@@ -9,13 +9,13 @@ stage('SourcCode') {
 
 }
 
-stage('Build the code'){
+stage('Build the code') {
 
-        sh 'mvn package'
+        sh 'mvn clean package'
 
 }
 
-stage('Archiveing and Test Results'){
+stage('Archiveing and Test Results') {
 
        junit '**/surefire_reports/*.xml'
        archiveArtifacts artifacts: '**/*.war', followSymlinks: false
